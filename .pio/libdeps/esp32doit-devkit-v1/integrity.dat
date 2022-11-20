@@ -1,0 +1,12 @@
+adafruit/RTClib@^2.1.1
+https://github.com/jmstriegel/Plantower_PMS7003.git
+https://github.com/DFRobot/DFRobot_OzoneSensor.git
+arduino-libraries/NTPClient@^3.2.1
+marian-craciunescu/ESP32Ping@^1.7
+seithan/Easy Nextion Library@^1.0.6
+bblanchon/ArduinoJson@^6.17.2
+knolleary/PubSubClient@^2.8
+finitespace/BME280@^3.0.0
+ostaquet/MQ131 gas sensor@^1.5.2
+sensirion/arduino-sht@^1.2.2
+adafruit/Adafruit BusIO@^1.13.2
