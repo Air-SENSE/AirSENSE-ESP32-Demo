@@ -11,11 +11,10 @@ ERROR_CODE MQTT_initClient( char*			 		_topic,
 {
 	uint8_t espMacAddress[6];				// mang luu dia chi MAC
 	WiFi.macAddress(espMacAddress);			// lay dia chi MAC cua WIFI
-	uint32_t macAddressDecimal = (espMacAddress[3] << 16) + (espMacAddress[4] << 8) + espMacAddress[5];
 
-	sprintf(_topic, "/V3/%8x/", macAddressDecimal);
-	sprintf(_espID, "%8x", macAddressDecimal);
-
+	sprintf(_topic, "/V3/%x%x%x%x/", espMacAddress[0],  espMacAddress[1],  espMacAddress[2],  espMacAddress[3]);
+	sprintf(_espID, "%x%x%x%x", espMacAddress[0],  espMacAddress[1],  espMacAddress[2],  espMacAddress[3]);
+	
 	log_e("%s",_espID);
 	_mqttClient.setKeepAlive(KEEP_ALIVE_PERIOD);
 	_mqttClient.setServer(MQTT_SERVER_IP_ADDRESS, MQTT_SERVER_PORT);		// cai dat server voi dia chi ip va port
