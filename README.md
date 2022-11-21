@@ -1,7 +1,7 @@
 # AirSENSE-ESP32-RTOS
 This is main development repo for ESP32 device in 20221 semester.
 **IMPORTANT NOTE** The first major version (v0.0) is developed in the master branch.
-The last stable version is available in the [release/v0.0](https://github.com/Air-SENSE/AirSENSE-ESP32-RTOS/tree/release/v8.3) branch.
+The last stable version is available in the [release/v0.0](https://github.com/Air-SENSE/AirSENSE-ESP32-RTOS/tree/release/v0.0) branch.
 
 ---
 
