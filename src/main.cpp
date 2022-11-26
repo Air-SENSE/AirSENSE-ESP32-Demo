@@ -22,7 +22,7 @@ void smartConfigWiFi(TimerHandle_t xTimer)
 	}
 
 	connectionStatus_st.wifiStatus = status_et::DISCONNECTED;
-	ESP_LOGE("Wifi disconnected!");
+	log_e("Wifi disconnected!");
 }
 
 void smartConfigWiFi_Task(void *parameters)

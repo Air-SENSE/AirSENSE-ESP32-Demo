@@ -29,7 +29,7 @@ ERROR_CODE isAllSensorDisconnected(struct connectionStatus _connectionStatus)
         isSensorDisconnected(_connectionStatus.bmeSensor)       == ERROR_SENSOR_DISCONNECTED 
         )
     {
-        ESP_LOGI("All sensors disconnected");
+        log_e("All sensors disconnected");
         return ERROR_SENSOR_ALL_DISCONNECTED;
     } else {
         return ERROR_NONE;
